@@ -1,7 +1,15 @@
 .card{
     background-color: white;
     border-radius: $border-radius;
+    width: 136px;
+    height: 33%;
+    flex: 1 0 0;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0px;
+    min-width: 200px;
 }
+
 .card-content{
     padding: 20px;
 }
