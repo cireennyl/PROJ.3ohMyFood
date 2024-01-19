@@ -4,4 +4,16 @@
 @import 'section';
 @import 'typography';
 @import'Utils';
-@import'navbar';
+@import'header';
+
+@mixin flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    background: $BgColor;
+    color: $text-color;
+}
+

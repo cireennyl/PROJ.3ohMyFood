@@ -1,7 +1,7 @@
 {
   "name": "ohmyfood",
   "version": "1.0.0",
-  "description": "",
+  "description": "Project 3",
   "main": "index.js",
   "scripts": {
     "sass": "sass -w ./sass/styles.scss ./css/styles.css"
