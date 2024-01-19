@@ -3,17 +3,16 @@
 @import'card';
 @import 'section';
 @import 'typography';
-@import'Utils';
-@import'header';
+@import'utils';
+@import'navbar';
 
-@mixin flexCenter{
+@mixin flexCenter {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-body{
+body {
     background: $BgColor;
     color: $text-color;
 }
-

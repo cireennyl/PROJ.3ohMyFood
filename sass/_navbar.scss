@@ -1,13 +1,12 @@
-.header .header-logo{
-    background-color:$BgColor;
+.navbar {
+    background-color: $BgColor;
     display: flex;
     justify-content: center;
     width: 100%;
     padding: 14px, 0px 13px 0px;
-
 }
 
-.header-logo{
+.nav-logo {
     width: 162px;
     max-width: 200px;
 
