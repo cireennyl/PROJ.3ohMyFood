@@ -1,17 +1,24 @@
-$border-radius:20px;
+$border-radius: 20px;
 $bg-light: #fff;
 $bg-grey: grey;
-$BgColor:#ffffff;
+$BgColor: #ffffff;
 $secondaryBgColor: #ff79da;
-$primaryColor:#9356DC;
-$tertiaryColor:#99E2D0;
+$primaryColor: #9356DC;
+$tertiaryColor: #99E2D0;
 $grey-heading-color: #353535;
 $icon-color: #7e7e7e;
-$text-color:#353535;
+$text-color: #353535;
 $font-weight: (
     "regular":400,
     "medium":500,
     "bold":700,
 );
-$font-family:shrikhand;
+$font-family: shrikhand;
 $footer-background: #353535;
+
+$purple-pink-gradient-color: (
+    318deg,
+    rgba(147, 86, 220, 1) 28%,
+    rgba(255, 121, 218, 1) 95%
+);
+$gradient-bgcolor: rgb(147, 86, 220);
