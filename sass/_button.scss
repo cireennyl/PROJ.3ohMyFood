@@ -1,11 +1,15 @@
-.Explorerestaurant{
-    @include flex-center(row);
+.Explorerestaurant {
+    background-color: $gradient-bgcolor;
+    display: inline;
+    block-size: auto;
+    display: flex;
+    justify-content: center;
     width: 218px;
     height: 50px;
     margin-bottom: 50px;
     border-radius: 25px;
-    background-color:#9356DC;
+
     text-decoration: none;
-    color: $BgColor;
+
 
 }

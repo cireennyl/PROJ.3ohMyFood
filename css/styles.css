@@ -13,6 +13,8 @@ body {
   border-radius: 20px;
   width: 136px;
   height: 33%;
+  display: flex;
+  flex-direction: column;
   flex: 1 0 0;
   flex-grow: 1;
   flex-shrink: 0;
@@ -20,9 +22,13 @@ body {
   min-width: 200px;
 }
 
+.card .card-image {
+  flex: 1 1 auto;
+}
+
 .card-image {
-  width: 135px;
-  height: 33%;
+  max-width: 350pxpx;
+  height: 251px;
 }
 
 .card-content {
@@ -31,10 +37,17 @@ body {
 
 .card-title {
   color: #353535;
+  font-family: Roboto;
   font-weight: .card-title font-weight medium;
-  font-size: 16px;
+  font-size: 17px;
   margin-top: 0px;
   margin-bottom: 5px;
+}
+
+.card-subtitle {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 .heart-icon {
@@ -50,10 +63,29 @@ body {
 }
 
 .section {
+  background-color: #fff;
   padding: 50px 0;
 }
 .section-title {
   margin-top: 0;
+}
+
+.section-title {
+  font-family: Roboto;
+  font-size: xx-large;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.sub-title {
+  font-family: Roboto;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
 }
 
 h2, h3 {
@@ -83,8 +115,52 @@ a, a:visited, a:active {
 }
 
 .nav-logo {
-  width: 162px;
-  max-width: 200px;
+  padding-top: 30px;
+  height: 100px;
+  max-width: 250px;
+  margin-bottom: 5px;
+}
+
+/***
+.h2 {
+    background-color: $grey-heading-color;
+    font-family: Roboto;
+    font-weight: 300;
+    text-align: center;
+    width: 124px;
+    height: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+***/
+.search-container {
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+  background-color: #ff79da;
+  text-align: center;
+}
+
+.search-button {
+  background-color: transparent;
+  color: grey;
+  height: 40px;
+  width: 45px;
+  border-style: none;
+}
+
+.fa-map-marker-alt {
+  color: rgb(70, 69, 69);
+  min-width: 50px;
+}
+
+.searchinput {
+  border-style: none;
+}
+
+.loc-search {
+  font-family: Roboto;
+  font-weight: 700;
 }
 
 body {

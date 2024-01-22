@@ -1,36 +1,54 @@
-.card{
+.card {
     background-color: white;
     border-radius: $border-radius;
     width: 136px;
     height: 33%;
+    display: flex;
+    flex-direction: column;
     flex: 1 0 0;
     flex-grow: 1;
     flex-shrink: 0;
     flex-basis: 0px;
     min-width: 200px;
 }
-.card-image{
-    width: 135px;
-    height: 33%;
-}
-.card-content{
-    padding: 20px 15px;
+
+.card .card-image {
+    flex: 1 1 auto;
 }
 
-.card-title  {
-    color:$text-color;
+.card-image {
+    max-width: 350pxpx;
+    height: 251px;
+}
+
+.card-content {
+    padding: 20px 15px;
+
+}
+
+.card-title {
+    color: $text-color;
+    font-family: Roboto;
     font-weight: &font-weight (medium);
-    font-size: 16px;
+    font-size: 17px;
     margin-top: 0px;
     margin-bottom: 5px;
 }
-.heart-icon{
+
+.card-subtitle {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.heart-icon {
     height: 23px;
     width: 23px;
     border: 1px;
     justify-content: right;
     align-items: flex-end;
 }
-.fa-sharp .fa-thin .fa-heart{
+
+.fa-sharp .fa-thin .fa-heart {
     color: $icon-color;
 }
