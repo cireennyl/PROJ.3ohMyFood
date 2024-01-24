@@ -50,11 +50,19 @@
     min-width: 50px;
 }
 
+@font-face {
+    font-family: Roboto;
+    src: url('/fonts/roboto-regular.woff2') format('woff2');
+}
+
 .searchinput {
     border-style: none;
+    font-family: Roboto;
+
 }
 
 .loc-search {
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     font-weight: 700;
+
 }

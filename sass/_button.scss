@@ -1,6 +1,6 @@
 .Explorerestaurant {
     background-color: $gradient-bgcolor;
-    display: inline;
+    display: inline-block;
     block-size: auto;
     display: flex;
     justify-content: center;
@@ -10,6 +10,5 @@
     border-radius: 25px;
 
     text-decoration: none;
-
 
 }

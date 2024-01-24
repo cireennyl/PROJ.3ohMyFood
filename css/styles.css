@@ -11,7 +11,7 @@ body {
 .card {
   background-color: white;
   border-radius: 20px;
-  width: 136px;
+  width: 460px;
   height: 33%;
   display: flex;
   flex-direction: column;
@@ -20,19 +20,26 @@ body {
   flex-shrink: 0;
   flex-basis: 0px;
   min-width: 200px;
+  margin: auto;
 }
 
 .card .card-image {
   flex: 1 1 auto;
+  width: 440px;
+  height: 240px;
+  margin: 10px;
+  padding: auto;
 }
 
 .card-image {
-  max-width: 350pxpx;
-  height: 251px;
+  max-width: max-content;
+  width: 450px;
+  margin: 5px;
+  border-radius: 10px;
 }
 
 .card-content {
-  padding: 20px 15px;
+  padding: 5px 10px;
 }
 
 .card-title {
@@ -154,12 +161,17 @@ a, a:visited, a:active {
   min-width: 50px;
 }
 
+@font-face {
+  font-family: Roboto;
+  src: url("/fonts/roboto-regular.woff2") format("woff2");
+}
 .searchinput {
   border-style: none;
+  font-family: Roboto;
 }
 
 .loc-search {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-weight: 700;
 }
 
