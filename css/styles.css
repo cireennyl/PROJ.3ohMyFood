@@ -45,15 +45,15 @@ body {
 .card-title {
   color: #353535;
   font-family: Roboto;
-  font-weight: .card-title font-weight medium;
-  font-size: 17px;
+  font-weight: bold;
+  font-size: 20px;
   margin-top: 0px;
   margin-bottom: 5px;
 }
 
 .card-subtitle {
   font-family: Roboto;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 300;
 }
 
@@ -65,8 +65,17 @@ body {
   align-items: flex-end;
 }
 
-.fa-sharp .fa-thin .fa-heart {
-  color: #7e7e7e;
+.fa-sharp .fa-light .fa-heart {
+  color: #9356DC;
+  min-width: 100px;
+  padding: 10px;
+  justify-content: right;
+  align-items: flex-end;
+}
+
+heart-icon:hover,
+heart-icon::focus {
+  background-color: rgb(147, 86, 220);
 }
 
 .section {

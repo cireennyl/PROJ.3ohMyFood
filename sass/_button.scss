@@ -1,5 +1,9 @@
 .Explorerestaurant {
     background-color: $gradient-bgcolor;
+    background-position: 0.5em;
+    background-repeat: no-repeat;
+    background-size: 1em;
+    padding-inline-start: 2em;
     display: inline-block;
     block-size: auto;
     display: flex;
@@ -8,7 +12,8 @@
     height: 50px;
     margin-bottom: 50px;
     border-radius: 25px;
-
+    font-family: Roboto;
+    font-size: larger;
     text-decoration: none;
 
 }
