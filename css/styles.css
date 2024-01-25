@@ -58,7 +58,8 @@ body {
 }
 
 .heart-icon {
-  align-items: self-start;
+  display: flex;
+  justify-content: flex-start;
 }
 
 /**********
@@ -77,8 +78,11 @@ body {
   align-items: flex-end;
 }
 
-heart-icon:hover {
-  transition: 0s;
+.heart-icon::before {
+  background-color: rgb(147, 86, 220);
+}
+
+.heart-icon::before :hover {
   background-color: rgb(147, 86, 220);
 }
 

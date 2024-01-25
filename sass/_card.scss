@@ -50,7 +50,8 @@
 }
 
 .heart-icon {
-    align-items: self-start;
+    display: flex;
+    justify-content: flex-start;
 }
 
 /**********
@@ -69,7 +70,10 @@
     align-items: flex-end;
 }
 
-heart-icon:hover {
-    transition: 0s;
+.heart-icon::before {
+    background-color: $gradient-bgcolor;
+}
+
+.heart-icon::before :hover {
     background-color: $gradient-bgcolor;
 }
