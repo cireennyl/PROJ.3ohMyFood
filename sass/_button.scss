@@ -1,4 +1,6 @@
-.Explorerestaurant {
+/***.explorerestaurant {
+    display: flex;
+    justify-content: center;
     background-color: $gradient-bgcolor;
     background-position: 0.5em;
     background-repeat: no-repeat;
@@ -6,8 +8,7 @@
     padding-inline-start: 2em;
     display: inline-block;
     block-size: auto;
-    display: flex;
-    justify-content: center;
+
     width: 218px;
     height: 50px;
     margin-bottom: 50px;
@@ -15,5 +16,10 @@
     font-family: Roboto;
     font-size: larger;
     text-decoration: none;
+}
+*****/
+.explorerestaurant {
+    background-color: $gradient-bgcolor;
+    align-items: center;
 
 }

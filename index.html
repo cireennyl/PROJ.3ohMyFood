@@ -7,12 +7,14 @@
     <meta name "keywords" content="food, ordering, menu">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="public/css/prefixed/style.css" type="text/css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="/fonts/roboto-regular.woff2" type="font/woff2" rel="preload" as="font" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap"
         rel="stylesheet">
+    <a href="https://www.flaticon.com/free-icons/heart" title="heart icons">Heart icons created by bong - Flaticon</a>
     <link rel="stylesheet" href="css/styles.css">
     <title>Kichen West</title>
 </head>
@@ -29,8 +31,8 @@
     -------------->
     <form class="search">
         <div class="search-container">
-            <button class="search-button" type="submit"><i class="fas fa-map-marker-alt"></i></button>
-            <input type="searchinput" placeholder="Islington, London" name="loc-search">
+            <button class="search-icon" type="submit"><i class="fas fa-map-marker-alt"></i></button>
+            <input type="Location-input" placeholder="Islington, London" name="loc-search">
         </div>
     </form>
 
@@ -39,9 +41,10 @@
         <h1 class="section-title">Book the meal you want</h1>
         <p class="sub-title">Discover our carefully selected high-end restaurants</p>
 
-        <div class="Explorerestaurant">
-            <a href="#">Explore our restaurants</a>
-        </div>
+        <button class="explorerestaurant">
+            <span><a href="#">Explore our restaurants</a>
+            </span>
+        </button>
     </section>
     <!-------------------K I T C H E N  E X P L O R E  B U T T O N------------------>
     <section class="section-how">
@@ -76,7 +79,8 @@
                 <p class="card-subtitle">Angel</p>
             </div>
             <div class="heart-icon">
-                <i class="fa-sharp fa-light fa-heart"></i>
+                <!--<i class="fa-sharp fa-light fa-heart"></i>--->
+                <i class="fas fa-heart"></i>
             </div>
 
 

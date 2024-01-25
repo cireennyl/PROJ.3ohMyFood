@@ -50,22 +50,26 @@
 }
 
 .heart-icon {
-    height: 23px;
-    width: 23px;
-    border: 1px;
+    align-items: self-start;
+}
+
+/**********
+.heart-icon {
+    height: 53px;
+    width: 43px;
+    border: 1px solid var($bg-grey);
     justify-content: right;
     align-items: flex-end;
 }
-
-.fa-sharp .fa-light .fa-heart {
-    color: $primaryColor;
+*********/
+.fa-heart {
     min-width: 100px;
     padding: 10px;
     justify-content: right;
     align-items: flex-end;
 }
 
-heart-icon:hover,
-heart-icon::focus {
+heart-icon:hover {
+    transition: 0s;
     background-color: $gradient-bgcolor;
 }

@@ -30,19 +30,19 @@
 
 .search-container {
     display: inline-block;
+    padding-top: 10px;
     width: 100%;
     height: 50px;
     background-color: $secondaryBgColor;
     text-align: center;
 }
 
-.search-button {
+.search-icon {
     background-color: transparent;
     color: $bg-grey;
     height: 40px;
     width: 45px;
     border-style: none;
-
 }
 
 .fa-map-marker-alt {
@@ -55,14 +55,20 @@
     src: url('/fonts/roboto-regular.woff2') format('woff2');
 }
 
-.searchinput {
+.location-input {
     border-style: none;
     font-family: Roboto;
-
+    font-size: large;
+    border-radius: 0;
+    $primaryColor: #9356DC;
 }
 
 .loc-search {
     font-family: Roboto, sans-serif;
     font-weight: 700;
 
+}
+
+.section-how {
+    align-items: center;
 }
