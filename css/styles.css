@@ -39,7 +39,8 @@ body {
 }
 
 .card-content {
-  padding: 5px 10px;
+  margin: 0%;
+  padding: 10px 15px;
 }
 
 .card-title {
@@ -58,27 +59,31 @@ body {
 }
 
 .heart-icon {
-  display: flex;
-  justify-content: flex-start;
+  position: relative;
 }
 
 /**********
 .heart-icon {
     height: 53px;
     width: 43px;
+        min-width: 100px;
     border: 1px solid var($bg-grey);
     justify-content: right;
     align-items: flex-end;
 }
 *********/
 .fa-heart {
-  min-width: 100px;
-  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 0;
+  padding: 15px;
   justify-content: right;
-  align-items: flex-end;
+  border: 2px solid var(grey);
 }
 
 .heart-icon::before {
+  height: 53px;
+  width: 43px;
   background-color: rgb(147, 86, 220);
 }
 
@@ -185,6 +190,7 @@ a, a:visited, a:active {
 }
 .location-input {
   border-style: none;
+  color: transparent;
   font-family: Roboto;
   font-size: large;
   border-radius: 0;
