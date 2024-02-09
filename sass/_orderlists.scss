@@ -3,26 +3,19 @@
     font-weight: 900;
     height: 22px;
     margin-top: 25px;
-    margin-right: 50%;
+    text-align: center;
 
 }
 
 .ordered-list {
+
     list-style: none;
-    /*
-    justify-content: center;
-    padding: 20px;
-    gap: 10px;
-    font-family: Roboto;
-    font-weight: 300;
-    font-size: medium;
-    height: 25px;
-    justify-content: center;
-    border-radius: 10px;
-    */
+    counter-reset: mycounter;
+
 }
 
 .ordered-list__item {
+    counter-increment: mycounter;
     margin: 0.25rem;
     background-color: #fff;
     box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
@@ -33,6 +26,7 @@
 }
 
 .ordered-list__item::before {
+    content: counter(mycounter);
     background: #9356DC;
     width: 2rem;
     height: 2rem;

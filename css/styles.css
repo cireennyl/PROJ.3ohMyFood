@@ -9,54 +9,33 @@ body {
   margin-right: auto;
 }
 
+.section {
+  box-sizing: border-box;
+  margin: auto;
+  max-width: 500px;
+}
+
 .card {
   background-color: white;
   border-radius: 20px;
-  width: 460px;
-  height: 33%;
+  padding: 0 20px;
   display: flex;
   flex-direction: column;
-  flex: 1 0 0;
-  flex-grow: 1;
-  flex-shrink: 0;
-  flex-basis: 0px;
-  min-width: 200px;
-  margin: auto;
 }
 
 .card .card-image {
-  flex: 1 1 auto;
-  width: 440px;
   height: 240px;
-  margin: 10px;
-  padding: auto;
-}
-
-.card-image {
-  max-width: max-content;
-  width: 450px;
-  margin: 5px;
-  border-radius: 10px;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .card-content {
-  margin: 0%;
   padding: 10px 15px;
 }
 
 .card-title {
-  color: #353535;
-  font-family: Roboto;
-  font-weight: bold;
-  font-size: 20px;
   margin-top: 0px;
-  margin-bottom: 5px;
-}
-
-.card-subtitle {
-  font-family: Roboto;
-  font-size: 17px;
-  font-weight: 300;
 }
 
 .heart-icon {
@@ -101,34 +80,11 @@ body {
 }
 
 .section-title {
-  font-family: Roboto;
-  height: 50px;
-  font-size: xx-large;
-  color: black;
-  font-weight: bolder;
-  font-style: normal;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 10px;
+  margin-top: 0;
 }
 
-.sub-title {
-  font-family: Roboto;
-  font-weight: 400;
-  height: 22px;
-  display: flex;
-  justify-content: center;
-  margin-block: 25px;
-  margin-bottom: 50px;
-}
-
-.section-title {
-  font-family: Roboto;
-  text-align: left;
-  font-weight: bolder;
-}
-
-h2, h3 {
+h2,
+h3 h5 {
   font-weight: 300;
   line-height: 1.1;
   margin-top: 0;
@@ -138,7 +94,9 @@ p {
   margin-top: 0;
 }
 
-a, a:visited, a:active {
+a,
+a:visited,
+a:active {
   text-decoration: none;
 }
 
@@ -235,25 +193,16 @@ a, a:visited, a:active {
   font-weight: 900;
   height: 22px;
   margin-top: 25px;
-  margin-right: 50%;
+  text-align: center;
 }
 
 .ordered-list {
   list-style: none;
-  /*
-  justify-content: center;
-  padding: 20px;
-  gap: 10px;
-  font-family: Roboto;
-  font-weight: 300;
-  font-size: medium;
-  height: 25px;
-  justify-content: center;
-  border-radius: 10px;
-  */
+  counter-reset: mycounter;
 }
 
 .ordered-list__item {
+  counter-increment: mycounter;
   margin: 0.25rem;
   background-color: #fff;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
@@ -262,6 +211,7 @@ a, a:visited, a:active {
 }
 
 .ordered-list__item::before {
+  content: counter(mycounter);
   background: #9356DC;
   width: 2rem;
   height: 2rem;
