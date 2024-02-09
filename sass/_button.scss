@@ -5,23 +5,30 @@
     block-size: auto;
     text-decoration: none;
 }
+
+.section bg-grey {
+    display: flex;
+}
 *****/
 .button {
+    margin-inline: auto;
     background-position: 10px;
     background-repeat: no-repeat;
     background-size: 1px;
     padding-inline-start: 25px;
     margin-bottom: 50px;
-    border-radius: 25px;
-    width: 188px;
-    height: 30px;
+    border-radius: 30px;
+    width: 250px;
+    height: 50px;
     font-family: Roboto;
     color: white;
-    font-weight: 700;
-    font-size: medium;
-    padding-top: 10px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    padding-top: 25px;
     background: rgb(162, 86, 220);
     background: linear-gradient(356deg, rgba(162, 86, 220, 1) 39%, rgba(255, 121, 218, 1) 100%);
+    box-shadow: rgb(179, 176, 180);
     display: inline-block;
     display: flex;
 }

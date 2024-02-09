@@ -1,72 +1,53 @@
 .navbar {
     background-color: $BgColor;
+    position: relative;
     display: flex;
     justify-content: center;
     width: 100%;
     padding: 14px, 0px 13px 0px;
+    box-shadow: 0em 0.1em 0.5em rgb(142, 142, 139);
 }
 
 .nav-logo {
-    padding-top: 30px;
-    height: 100px;
-    max-width: 250px;
+    padding-block: 20px;
+    height: 113px;
+    width: 375px;
     margin-bottom: 5px;
 
 }
 
-/***
-.h2 {
-    background-color: $grey-heading-color;
-    font-family: Roboto;
-    font-weight: 300;
-    text-align: center;
-    width: 124px;
-    height: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-***/
-//
-
-.search-container {
+.nav-loc {
     display: inline-block;
-    padding-top: 10px;
-    width: 100%;
-    height: 50px;
-    background-color: $secondaryBgColor;
-    text-align: center;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    justify-content: center;
+    font-family: Roboto, sans-serif;
+    font-size: 22px;
+
+    padding-block: 25px;
+
 }
 
-.search-icon {
-    background-color: transparent;
-    color: $bg-grey;
+/***
+.fas .fa-map-marker-alt {
+    display: flex;
+    justify-content: center;
+    display: inline-block;
+    margin-inline: auto;
+    padding: auto;
     height: 40px;
     width: 45px;
+    color: $bg-grey;
     border-style: none;
+    background-color: transparent;
 }
+***/
+
 
 .fa-map-marker-alt {
     color: rgb(70, 69, 69);
     min-width: 50px;
-}
-
-
-.location-input {
-    border-style: none;
-    color: transparent;
-    font-family: Roboto;
-    font-size: large;
-    border-radius: 0;
-    $primaryColor: #9356DC;
-
-}
-
-.loc-search {
-    font-family: Roboto, sans-serif;
-    font-weight: 700;
-
-}
-
-.section-how {
+    display: flex;
+    justify-content: center;
     align-items: center;
 }

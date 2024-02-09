@@ -9,18 +9,28 @@
 
 .section-title {
     font-family: Roboto;
+    height: 50px;
     font-size: xx-large;
     color: black;
-    font-weight: bold;
+    font-weight: bolder;
+    font-style: normal;
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
 .sub-title {
     font-family: Roboto;
-    font-weight: 800;
+    font-weight: 400;
+    height: 22px;
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-block: 25px;
+    margin-bottom: 50px;
+}
+
+.section-title {
+    font-family: Roboto;
+    text-align: left;
+    font-weight: bolder;
 }
