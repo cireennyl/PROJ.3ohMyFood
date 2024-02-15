@@ -1,3 +1,21 @@
+h1 h2 h3 p {
+    font-family: Roboto;
+
+}
+
+h1 {
+    line-height: 2.5;
+    font-weight: bolder;
+    text-align: center;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 25px;
+    color: #000;
+
+}
+
 h2,
 h3 h5 {
 
@@ -8,6 +26,17 @@ h3 h5 {
 
 p {
     margin-top: 0;
+
+}
+
+
+a {
+    text-align: center;
+    font-family: Roboto;
+    color: #fff;
+    font-size: 20px;
+    padding-top: 20px;
+    font-weight: 400;
 }
 
 a,

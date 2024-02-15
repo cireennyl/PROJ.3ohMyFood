@@ -1,3 +1,4 @@
+/*******
 .section {
     background-color: #fff;
     padding: 50px 0;
@@ -9,6 +10,9 @@
 
 .section-title {
     margin-top: 0;
+   
 }
-
-.sub-title {}
+*****/
+.section bg-grey {
+    background-color: $bg-grey;
+}

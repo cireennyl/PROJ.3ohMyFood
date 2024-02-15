@@ -3,10 +3,11 @@
     position: relative;
     display: flex;
     justify-content: center;
-    width: 100%;
-    padding: 14px, 0px 13px 0px;
+
+    padding: 10px, 0px 13px 0px;
     box-shadow: 0em 0.1em 0.5em rgb(142, 142, 139);
 }
+
 
 .nav-logo {
     padding-block: 20px;
@@ -18,7 +19,7 @@
 
 .nav-loc {
     display: inline-block;
-    background-color: rgb(238, 238, 238);
+    background-color: #eaeaea;
     display: flex;
     justify-content: center;
     font-family: Roboto, sans-serif;

@@ -3,6 +3,7 @@
     margin: auto;
     max-width: 500px;
 
+
 }
 
 .card {
@@ -13,11 +14,13 @@
     flex-direction: column;
 }
 
+
 .card .card-image {
     height: 240px;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    display: block;
 }
 
 .card-content {
@@ -28,7 +31,6 @@
     margin-top: 0px;
 }
 
-.card-subtitle {}
 
 .heart-icon {
     position: relative;

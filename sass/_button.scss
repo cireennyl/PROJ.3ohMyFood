@@ -1,34 +1,32 @@
-/***.explorerestaurant {
-    display: flex;
-    justify-content: center;
-    
+.section {
+    position: relative;
     block-size: auto;
-    text-decoration: none;
+    justify-content: center;
 }
 
-.section bg-grey {
-    display: flex;
-}
-*****/
-.button {
+.section__button {
     margin-inline: auto;
     background-position: 10px;
     background-repeat: no-repeat;
-    background-size: 1px;
-    padding-inline-start: 25px;
-    margin-bottom: 50px;
+    background-size: 1rem;
+    padding-inline-start: 40px;
+    margin: 50px auto 60px auto;
     border-radius: 30px;
     width: 250px;
     height: 50px;
-    font-family: Roboto;
-    color: white;
-    text-align: center;
-    font-weight: 400;
-    font-size: 20px;
-    padding-top: 25px;
     background: rgb(162, 86, 220);
     background: linear-gradient(356deg, rgba(162, 86, 220, 1) 39%, rgba(255, 121, 218, 1) 100%);
     box-shadow: rgb(179, 176, 180);
     display: inline-block;
     display: flex;
 }
+
+/**
+.section__button a {
+
+    font-family: Roboto;
+        color: white;
+        text-align: center;
+        
+}
+**/
