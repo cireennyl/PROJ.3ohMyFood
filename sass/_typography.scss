@@ -1,32 +1,28 @@
-h1 h2 h3 p {
+h1 h2 p a {
     font-family: Roboto;
-
-}
-
-h1 {
-    line-height: 2.5;
-    font-weight: bolder;
     text-align: center;
-}
-
-h2 {
-    font-weight: bold;
-    font-size: 25px;
-    color: #000;
 
 }
 
-h2,
-h3 h5 {
+h1 h2 {
+    font-size: 24px;
+    left: 28.13px;
+    font-weight: 700;
+}
 
-    font-weight: 300;
-    line-height: 1.1;
-    margin-top: 0;
+.card-section-title {
+    font-family: Roboto;
+    color: black;
+    width: 268.72px;
+    height: 28px;
+
 }
 
 p {
-    margin-top: 0;
-
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21.09px;
+    color: $text-color;
 }
 
 

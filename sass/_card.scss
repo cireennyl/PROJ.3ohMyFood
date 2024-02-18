@@ -1,33 +1,45 @@
-.section {
-    box-sizing: border-box;
-    margin: auto;
-    max-width: 500px;
+.card-section {
+    max-width: 1440px;
+    height: 608px;
+    margin-top: 80px;
+    background-color: $bg-grey;
+    padding: 10px 180px 10px 180px;
+    gap: 20px;
+    border: red solid;
 
 
 }
 
-.card {
-    background-color: white;
-    border-radius: $border-radius;
-    padding: 0 20px;
+.cards {
     display: flex;
+    flex: 1 0 0;
     flex-direction: column;
+    background-color: white;
+
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    border-radius: $border-radius;
+    border: green solid;
 }
 
-
-.card .card-image {
-    height: 240px;
+.card-image {
     object-fit: cover;
-    border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    height: 180px;
+    width: 530px;
     display: block;
+    flex-wrap: wrap;
+
 }
 
 .card-content {
     padding: 10px 15px;
 }
 
-.card-title {
+.card-section-title {
     margin-top: 0px;
 }
 
@@ -47,15 +59,6 @@
     align-items: flex-end;
 }
 *********/
-.fa-heart {
-    display: flex;
-    justify-content: flex-start;
-    padding-top: 0;
-    padding: 15px;
-    justify-content: right;
-    border: 2px solid var($bg-grey);
-
-}
 
 .heart-icon::before {
     height: 53px;

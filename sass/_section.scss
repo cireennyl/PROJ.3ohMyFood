@@ -1,6 +1,5 @@
-/*******
 .section {
-    background-color: #fff;
+    background-color: $bg-grey;
     padding: 50px 0;
 
     &-title {
@@ -8,11 +7,15 @@
     }
 }
 
-.section-title {
-    margin-top: 0;
-   
+.section__title {
+    font-family: Roboto;
 }
-*****/
+
+
+.section__sub-title {
+    font-family: Roboto;
+}
+
 .section bg-grey {
     background-color: $bg-grey;
 }

@@ -2,7 +2,9 @@
     position: relative;
     block-size: auto;
     justify-content: center;
+
 }
+
 
 .section__button {
     margin-inline: auto;
@@ -19,6 +21,23 @@
     box-shadow: rgb(179, 176, 180);
     display: inline-block;
     display: flex;
+}
+
+.card-new {
+    display: inline-block;
+    background-color: #99e2d0;
+    color: #008766;
+    font-family: Roboto;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.1;
+    width: 80px;
+    height: 29px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 248px;
+    margin-top: 13px;
+    padding-top: 5px;
 }
 
 /**

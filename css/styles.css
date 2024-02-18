@@ -9,33 +9,44 @@ body {
     margin-right: auto;
 }
 */
-.section {
-  box-sizing: border-box;
-  margin: auto;
-  max-width: 500px;
+.card-section {
+  max-width: 1440px;
+  height: 608px;
+  margin-top: 80px;
+  background-color: #f6f6f6;
+  padding: 10px 180px 10px 180px;
+  gap: 20px;
+  border: red solid;
 }
 
-.card {
-  background-color: white;
-  border-radius: 20px;
-  padding: 0 20px;
+.cards {
   display: flex;
+  flex: 1 0 0;
   flex-direction: column;
+  background-color: white;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  border-radius: 20px;
+  border: green solid;
 }
 
-.card .card-image {
-  height: 240px;
+.card-image {
   object-fit: cover;
-  border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  height: 180px;
+  width: 530px;
   display: block;
+  flex-wrap: wrap;
 }
 
 .card-content {
   padding: 10px 15px;
 }
 
-.card-title {
+.card-section-title {
   margin-top: 0px;
 }
 
@@ -53,15 +64,6 @@ body {
     align-items: flex-end;
 }
 *********/
-.fa-heart {
-  display: flex;
-  justify-content: flex-start;
-  padding-top: 0;
-  padding: 15px;
-  justify-content: right;
-  border: 2px solid var(#f6f6f6);
-}
-
 .heart-icon::before {
   height: 53px;
   width: 43px;
@@ -72,50 +74,49 @@ body {
   background-color: rgb(147, 86, 220);
 }
 
-/*******
 .section {
-    background-color: #fff;
-    padding: 50px 0;
-
-    &-title {
-        margin-top: 0;
-    }
+  background-color: #f6f6f6;
+  padding: 50px 0;
 }
-
 .section-title {
-    margin-top: 0;
-
+  margin-top: 0;
 }
-*****/
+
+.section__title {
+  font-family: Roboto;
+}
+
+.section__sub-title {
+  font-family: Roboto;
+}
+
 .section bg-grey {
   background-color: #f6f6f6;
 }
 
-h1 h2 h3 p {
+h1 h2 p a {
   font-family: Roboto;
-}
-
-h1 {
-  line-height: 2.5;
-  font-weight: bolder;
   text-align: center;
 }
 
-h2 {
-  font-weight: bold;
-  font-size: 25px;
-  color: #000;
+h1 h2 {
+  font-size: 24px;
+  left: 28.13px;
+  font-weight: 700;
 }
 
-h2,
-h3 h5 {
-  font-weight: 300;
-  line-height: 1.1;
-  margin-top: 0;
+.card-section-title {
+  font-family: Roboto;
+  color: black;
+  width: 268.72px;
+  height: 28px;
 }
 
 p {
-  margin-top: 0;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21.09px;
+  color: #353535;
 }
 
 a {
@@ -145,6 +146,11 @@ h1 {
 p {
   color: #353535;
   text-align: center;
+}
+
+ol li {
+  justify-content: center;
+  justify-content: space-between;
 }
 
 .navbar {
@@ -218,6 +224,23 @@ p {
   display: flex;
 }
 
+.card-new {
+  display: inline-block;
+  background-color: #99e2d0;
+  color: #008766;
+  font-family: Roboto;
+  text-align: center;
+  font-weight: 500;
+  line-height: 1.1;
+  width: 80px;
+  height: 29px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 248px;
+  margin-top: 13px;
+  padding-top: 5px;
+}
+
 /**
 .section__button a {
 
@@ -228,20 +251,27 @@ p {
 }
 **/
 .order-title {
-  font-family: Roboto;
   font-weight: 900;
   height: 22px;
-  margin-top: 25px;
+  padding: 50px 180px 80px 180px;
+  gap: 10px;
+  justify-content: space-between;
   text-align: center;
 }
 
 .ordered-list {
+  position: absolute;
+  display: flex;
+  align-content: center;
   list-style: none;
   counter-reset: mycounter;
+  justify-content: space-around;
 }
 
 .ordered-list__item {
+  position: relative;
   counter-increment: mycounter;
+  flex-wrap: wrap;
   margin: 0.25rem;
   background-color: #fff;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
@@ -254,13 +284,32 @@ p {
   background: #9356DC;
   width: 2rem;
   height: 2rem;
-  border-radius: 20px;
+  border-radius: 70px;
   display: inline-block;
   line-height: 2rem;
   color: #fff;
   text-align: center;
   margin-right: 0.5rem;
   margin-left: -1rem;
+  border-style: none;
+  border-radius: 50px;
+}
+
+.orderlist-icon {
+  padding: 50px;
+}
+
+.fa-mobile-screen-button .fa-solid .fa-store {
+  color: rgb(140, 144, 148);
+  height: 113px;
+  width: 375px;
+}
+
+.ordered-list__item .ordered-list__item-icon {
+  padding-right: 20px;
+  gap: 50px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /*
@@ -268,8 +317,6 @@ ol li {
 
     background: rgb(162, 86, 220);
     margin: 0px;
-
-    color: white;
     font-weight: 500;
     text-align: center;
     line-height: 2rem;
@@ -281,16 +328,6 @@ ol li {
     align-items: center;
 }
 */
-.orderlist-icon {
-  padding: 25px;
-}
-
-.fa-mobile-screen-button .fa-solid .fa-store {
-  color: rgb(140, 144, 148);
-  height: 80px;
-  width: 85px;
-}
-
 /***********
 ol li {
     background: rgb(162, 86, 220);
@@ -303,6 +340,19 @@ ol li {
     color: white;
     text-align: center;
 }********/
+.fa-heart {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 0;
+  padding: 15px;
+  justify-content: right;
+  border: 2px solid var(#f6f6f6);
+}
+
+.fa-mobile-screen-button .fa-solid .fa-store .fa-light .fa-heart {
+  border: 2px solid var(#f6f6f6);
+}
+
 body {
   background: #ffffff;
   color: #353535;
