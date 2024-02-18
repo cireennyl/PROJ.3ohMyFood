@@ -1,15 +1,37 @@
-.fa-heart {
+/**.fa-heart{
     display: flex;
     justify-content: flex-start;
     padding-top: 0;
     padding: 15px;
-    justify-content: right;
-    border: 2px solid var($bg-grey);
+
+}**/
+.fa-light .fa-heart {
+    color: #4b4b4b;
 
 }
 
+.fa-solid .fa-heart :hover:before {
+    content: '';
+    display: inline-flex;
+    position: absolute;
+    padding-top: 0px;
+    height: 2px;
+    left: 25px;
+    right: 25px;
+    justify-content: right;
+    border: 2px solid;
+    transition: 3s;
+}
+
+
+.fa-store {
+    color: #9356DC;
+}
 
 .fa-mobile-screen-button .fa-solid .fa-store .fa-light .fa-heart {
     border: 2px solid var($bg-grey);
+}
 
+.fa-mobile-screen-button {
+    color: $icon;
 }
