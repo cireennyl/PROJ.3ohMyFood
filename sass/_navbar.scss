@@ -3,29 +3,21 @@
     position: relative;
     display: flex;
     justify-content: center;
-
-    padding: 10px, 0px 13px 0px;
+    padding: 0;
     box-shadow: 0em 0.1em 0.5em rgb(142, 142, 139);
 }
 
-
 .nav-logo {
-    padding-block: 20px;
-    height: 113px;
-    width: 375px;
-    margin-bottom: 5px;
-
+    padding: 20px 0;
+    height: 30px;
 }
 
 .nav-loc {
-    display: inline-block;
     background-color: #eaeaea;
     display: flex;
     justify-content: center;
-    font-family: Roboto, sans-serif;
-    font-size: 22px;
-
-    padding-block: 25px;
+    font-size: 1.2rem;
+    padding: 16px 0;
 
 }
 
@@ -43,12 +35,3 @@
     background-color: transparent;
 }
 ***/
-
-
-.fa-map-marker-alt {
-    color: rgb(70, 69, 69);
-    min-width: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}

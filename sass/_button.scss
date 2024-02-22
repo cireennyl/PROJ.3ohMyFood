@@ -1,26 +1,18 @@
 .section {
-    position: relative;
-    block-size: auto;
-    justify-content: center;
-
+    padding: 45px;
 }
 
 
 .section__button {
-    margin-inline: auto;
-    background-position: 10px;
-    background-repeat: no-repeat;
-    background-size: 1rem;
-    padding-inline-start: 40px;
-    margin: 50px auto 60px auto;
+
     border-radius: 30px;
-    width: 250px;
-    height: 50px;
-    background: rgb(162, 86, 220);
-    background: linear-gradient(356deg, rgba(162, 86, 220, 1) 39%, rgba(255, 121, 218, 1) 100%);
-    box-shadow: rgb(179, 176, 180);
+    background: rgb(220, 110, 219);
+    background: linear-gradient(169deg, rgba(220, 110, 219, 1) 27%, rgba(165, 92, 220, 1) 100%);
+    box-shadow: 0 3px 15px 0 rgba(0, 0, 0.3);
+    min-width: 155px;
     display: inline-block;
-    display: flex;
+    padding: 12px 20px;
+
 }
 
 .card-new {
