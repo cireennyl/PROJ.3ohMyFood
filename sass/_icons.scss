@@ -6,25 +6,6 @@
     align-items: center;
 }
 
-.fa-light .fa-heart {
-    color: #4b4b4b;
-
-}
-
-.fa-solid .fa-heart :hover:before {
-    content: '';
-    display: inline-flex;
-    position: absolute;
-    padding-top: 0px;
-    height: 2px;
-    left: 25px;
-    right: 25px;
-    justify-content: right;
-    border: 2px solid;
-    transition: 3s;
-}
-
-
 .fa-store {
     color: #9356DC;
 }
@@ -36,3 +17,28 @@
 .fa-mobile-screen-button {
     color: $icon;
 }
+
+.m-auto-left {
+    display: block;
+}
+
+
+
+/****
+.fa-light .fa-heart {
+    color: #4b4b4b;
+    margin-left: auto;
+}
+.fa-solid .fa-heart :hover:before {
+    content: '';
+    display: inline-flex;
+    position: absolute;
+    padding-top: 0px;
+    height: 10px;
+    left: 25px;
+    right: 25px;
+    justify-content: right;
+    border: 2px solid;
+    transition: 3s;
+}
+****/
