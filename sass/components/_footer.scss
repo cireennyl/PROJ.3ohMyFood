@@ -1,0 +1,15 @@
+.footer_container {
+    background-color: $footer-background;
+    padding: 22px 25px;
+    margin-top: 60px;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo {
+    padding: 20px 0;
+    height: 30px;
+}
