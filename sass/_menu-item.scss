@@ -1,41 +1,10 @@
-body {
-    margin: 0;
-}
-
-.kitchenwest_container {
-    margin: 0 auto;
-    max-width: 400px;
-    padding: 15px;
-}
-
-.kitchenwest-logo {
-    height: 275px;
-    width: 375px;
-
-}
-
-@include $bg-grey ;
-
-.border-radius-top {
-    border-radius: 20px 20px 0 0;
-
-    &_mt {
-        margin-top: -30px;
-    }
-}
-
-.title {
-    font-family: Roboto;
-    font-weight: $font-weight (
-        "bold")
-}
-
-.menu-item {
+.menu-item__card {
+    display: flex;
     background-color: #fff;
-    box-shadow: 0 2px 10px 0 rgba(0, 0, 0.3
-    );
-padding: 1rem 1rem 1rem 0;
-border-radius: 10px;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0.3);
+    padding: 1rem 0rem 1rem 1rem;
+    border-radius: 10px;
+
 }
 
 .menu-item__input {
@@ -69,7 +38,8 @@ border-radius: 10px;
     transition: width 300ms;
 }
 
+
+
 .menu-item__input:checked+label .menu-item-checked {
     width: 30px;
-
 }

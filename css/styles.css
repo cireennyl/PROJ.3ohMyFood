@@ -158,6 +158,16 @@ a:active {
   color: #008766;
 }
 
+body {
+  font-family: Roboto;
+}
+
+.title {
+  font-family: Shrikhand;
+  text-align: left;
+  margin-top: 20px;
+}
+
 .bg-grey {
   background-color: #f6f6f6;
 }
@@ -179,6 +189,11 @@ ol li {
   max-width: 800px;
   margin: auto;
   padding: 0 30px;
+}
+
+.mt {
+  margin-top: -60px;
+  position: relative;
 }
 
 .navbar {
@@ -321,6 +336,10 @@ ol li {
   display: block;
 }
 
+.fa-regular .fa-circle-check {
+  border: 2px solid var(#f6f6f6);
+}
+
 /****
 .fa-light .fa-heart {
     color: #4b4b4b;
@@ -339,6 +358,95 @@ ol li {
     transition: 3s;
 }
 ****/
+.img-header {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+}
+
+.border-radius-top {
+  border-radius: 20px 20px 0 0;
+}
+
+.menu-item__card {
+  display: flex;
+  background-color: #fff;
+  box-shadow: 0 2px 10px 0 rgb(0, 0, 0);
+  padding: 1rem 0rem 1rem 1rem;
+  border-radius: 10px;
+}
+
+.menu-item__input {
+  display: none;
+}
+
+.menu-item__body {
+  flex-grow: 1;
+}
+
+.menu-item__title {
+  display: block;
+}
+
+.menu-item__text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-item__price {
+  display: flex;
+  padding: 0 20px;
+}
+
+.menu-item-checked {
+  width: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: width 300ms;
+}
+
+.menu-item__input:checked + label .menu-item-checked {
+  width: 30px;
+}
+
+.menu-start {
+  text-transform: uppercase;
+  color: #3d3d3d;
+  font-weight: 100;
+  font-family: Roboto;
+  position: relative;
+  display: inline-block;
+}
+
+.menu-start:hover:before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 3px;
+  letter-spacing: 0.5;
+  height: 2px;
+  background-color: #99E2D0;
+  box-sizing: border-box;
+  left: 0;
+  right: 0px;
+}
+
+.menu-start::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 0;
+  right: 0;
+  bottom: 0px;
+  transition: width 300ms;
+}
+
+.menu-start::after {
+  width: 100%;
+}
+
 body {
   background: #ffffff;
   color: #353535;

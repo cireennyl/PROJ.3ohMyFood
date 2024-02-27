@@ -1,0 +1,37 @@
+.menu-start {
+    text-transform: uppercase;
+    color: $text-menu;
+    font-weight: 100;
+    font-family: Roboto;
+
+    position: relative;
+    display: inline-block;
+}
+
+.menu-start:hover:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    letter-spacing: 0.5;
+    height: 2px;
+    background-color: $tertiaryColor;
+    box-sizing: border-box;
+    left: 0;
+    right: 0px;
+}
+
+.menu-start::after {
+    content: "";
+    position: absolute;
+
+    height: 4px;
+    width: 0;
+    right: 0;
+    bottom: 0px;
+    transition: width 300ms;
+}
+
+.menu-start::after {
+    width: 100%;
+}

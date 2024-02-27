@@ -8,11 +8,19 @@
 @import'button';
 @import'orderlists';
 @import'icons';
+@import 'img-header';
+@import'borders';
+@import'menu-item';
+@import'menu-title-underlineeffect';
 
 @mixin flexCenter {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@mixin transition-ease {
+    transition: all 0.5 ease-in-out;
 }
 
 body {
