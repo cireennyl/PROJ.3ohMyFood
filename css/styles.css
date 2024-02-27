@@ -340,6 +340,15 @@ ol li {
   border: 2px solid var(#f6f6f6);
 }
 
+.fa-utensils {
+  padding: 15px;
+  border: 1px solid #ededed;
+}
+
+.fa-handshake-simple {
+  padding: 15px;
+}
+
 /****
 .fa-light .fa-heart {
     color: #4b4b4b;
@@ -408,7 +417,27 @@ ol li {
 }
 
 .menu-item__input:checked + label .menu-item-checked {
-  width: 30px;
+  width: 80px;
+  /* color: $text-color;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 3px;
+  padding: 10px 10px;
+  font-weight: 700; */
+}
+
+.fa-regular .fa-circle-check {
+  padding-right: auto;
+}
+
+.menu-item__price:hover {
+  background-color: #99E2D0;
+  color: #353535;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 3px;
+  padding: 10px 10px;
+  font-weight: 700;
 }
 
 .menu-start {
@@ -437,14 +466,54 @@ ol li {
   content: "";
   position: absolute;
   height: 4px;
-  width: 0;
+  width: 20px;
   right: 0;
-  bottom: 0px;
+  bottom: 8px;
   transition: width 300ms;
 }
 
 .menu-start::after {
   width: 100%;
+}
+
+.footer {
+  margin: 0;
+  background-color: #353535;
+  color: #ededed;
+  font-family: Roboto;
+  padding: 30px, 25px, 30px, 25px;
+  /** 
+      position: fixed;
+      bottom: 0.4rem;
+      right: 16px;
+
+      padding: 16px;
+      color: #ffffff;
+      background-color: $text-color;*
+
+  **/
+}
+
+.footer-section {
+  display: flex;
+}
+
+.footer-links {
+  flex-direction: column;
+}
+
+.footer-link {
+  justify-content: space-between;
+}
+
+.h4 {
+  font-family: Shrikhand;
+  color: #eaeaea;
+}
+
+.footer-logo {
+  padding: 20px 0;
+  height: 30px;
 }
 
 body {

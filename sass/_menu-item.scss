@@ -41,5 +41,27 @@
 
 
 .menu-item__input:checked+label .menu-item-checked {
-    width: 30px;
+    width: 80px;
+    /* color: $text-color;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 3px;
+    padding: 10px 10px;
+    font-weight: 700; */
+}
+
+.fa-regular .fa-circle-check {
+    padding-right: auto;
+
+}
+
+.menu-item__price:hover {
+    background-color: $tertiaryColor;
+    color: $text-color;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 3px;
+    padding: 10px 10px;
+    font-weight: 700;
+
 }
