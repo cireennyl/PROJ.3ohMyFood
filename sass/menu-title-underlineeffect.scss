@@ -3,7 +3,7 @@
     color: $text-menu;
     font-weight: 100;
     font-family: Roboto;
-
+    margin-bottom: 10px;
     position: relative;
     display: inline-block;
 }
@@ -12,9 +12,10 @@
     content: '';
     display: block;
     position: absolute;
-    bottom: 3px;
+    bottom: -2px;
+
     letter-spacing: 0.5;
-    height: 2px;
+    height: 3px;
     background-color: $tertiaryColor;
     box-sizing: border-box;
     left: 0;
@@ -29,7 +30,8 @@
     width: 20px;
     right: 0;
     bottom: 8px;
-    transition: width 300ms;
+    transition: ease-out;
+
 }
 
 .menu-start::after {

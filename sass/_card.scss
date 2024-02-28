@@ -75,10 +75,7 @@
     border: 2px solid var($bg-grey);
 }
 
-.heart-icon:hover:before {
-    height: 53px;
-    width: 43px;
-    border: 1px solid var($solid-heart);
-    justify-content: right;
-    align-items: flex-end;
+.heart-icon:hover {
+    color: $gradient-bgcolor;
+    transition: ease-in 300ms;
 }
