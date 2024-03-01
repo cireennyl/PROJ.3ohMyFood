@@ -24,6 +24,9 @@
 
 .fa-regular .fa-circle-check {
     border: 2px solid var($bg-grey);
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 20px;
 }
 
 .fa-utensils {
@@ -35,11 +38,12 @@
     padding: 15px;
 }
 
-/****
 .fa-light .fa-heart {
     color: #4b4b4b;
     margin-left: auto;
+    cursor: pointer;
 }
+
 .fa-solid .fa-heart :hover:before {
     content: '';
     display: inline-flex;
@@ -50,6 +54,6 @@
     right: 25px;
     justify-content: right;
     border: 2px solid;
+    background-color: $solid-heart;
     transition: 3s;
 }
-****/

@@ -8,7 +8,7 @@
     display: inline-block;
 }
 
-.menu-start:hover:before {
+.menu-start:before {
     content: '';
     display: block;
     position: absolute;
@@ -19,7 +19,7 @@
     background-color: $tertiaryColor;
     box-sizing: border-box;
     left: 0;
-    right: 0px;
+    width: 50px;
 }
 
 .menu-start::after {
@@ -30,7 +30,7 @@
     width: 20px;
     right: 0;
     bottom: 8px;
-    transition: ease-out;
+    transition: ease-out 2s;
 
 }
 

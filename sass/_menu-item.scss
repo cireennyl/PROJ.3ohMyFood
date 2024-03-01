@@ -2,11 +2,10 @@
     display: flex;
     background-color: #fff;
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0.3);
-    padding: 1rem 0rem 1rem 1rem;
     border-radius: 10px;
     justify-content: space-between;
     gap: 20px;
-
+    overflow: hidden;
 }
 
 .menu-item__input {
@@ -15,20 +14,22 @@
 
 .menu-item__body {
     flex-grow: 1;
+    padding: 1rem;
+    overflow: hidden;
 }
 
-.menu-item__title {
-    display: block;
-}
-
+.menu-item__title,
 .menu-item__text {
-    display: flex;
-    justify-content: space-between;
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .menu-item__price {
     display: flex;
     padding: 0 20px;
+    align-items: center;
 }
 
 .menu-item-checked {
@@ -38,6 +39,7 @@
     align-items: center;
     justify-content: center;
     transition: width 300ms;
+    background-color: $tertiaryColor;
 }
 
 .menu-item__input:checked+label .menu-item-checked {
@@ -54,13 +56,8 @@
     padding-right: auto;
 }
 
-.menu-item__price:hover {
-    background-color: $tertiaryColor;
-    color: $text-color;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border: 3px;
-    padding: 10px 10px;
-    font-weight: 700;
-
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }

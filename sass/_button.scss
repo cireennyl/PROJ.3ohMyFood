@@ -7,7 +7,27 @@
     min-width: 155px;
     display: inline-block;
     padding: 12px 20px;
+    cursor: pointer;
+    margin: 10px;
+    position: relative;
+    transition: 0.8s;
+    overflow: hidden;
 
+    .section__button::before {
+        content: "";
+        position: absolute;
+        background: $gradient-bgcolor;
+        right: 0%;
+        width: 0%;
+        height: 0%;
+        z-index: -1;
+        transition: 0.8s;
+    }
+
+    .section__button:hover {
+        background-color: $purple-pink-gradient-color;
+        transition: ease-in-out 0.8s;
+    }
 }
 
 .card-new {

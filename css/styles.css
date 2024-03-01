@@ -19,19 +19,29 @@ body {
   gap: 20px;
 }
 
+.card-group {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card-group .card {
+  min-width: 390px;
+  flex: 1 0 0;
+}
+
 .card {
   position: relative;
   background-color: #fff;
   border-radius: 20px;
   box-shadow: 0 0 10px 0 rgb(0, 0, 0);
-  margin-bottom: 50px;
 }
 
 .card-image {
   object-fit: cover;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
-  height: 180px;
+  height: 130px;
   width: 100%;
 }
 
@@ -237,6 +247,25 @@ ol li {
   min-width: 155px;
   display: inline-block;
   padding: 12px 20px;
+  cursor: pointer;
+  margin: 10px;
+  position: relative;
+  transition: 0.8s;
+  overflow: hidden;
+}
+.section__button .section__button::before {
+  content: "";
+  position: absolute;
+  background: rgb(147, 86, 220);
+  right: 0%;
+  width: 0%;
+  height: 0%;
+  z-index: -1;
+  transition: 0.8s;
+}
+.section__button .section__button:hover {
+  background-color: 318deg, rgb(147, 86, 220) 28%, rgb(255, 121, 218) 95%;
+  transition: ease-in-out 0.8s;
 }
 
 .card-new {
@@ -335,6 +364,9 @@ ol li {
 
 .fa-regular .fa-circle-check {
   border: 2px solid var(#f6f6f6);
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 20px;
 }
 
 .fa-utensils {
@@ -346,24 +378,26 @@ ol li {
   padding: 15px;
 }
 
-/****
 .fa-light .fa-heart {
-    color: #4b4b4b;
-    margin-left: auto;
+  color: #4b4b4b;
+  margin-left: auto;
+  cursor: pointer;
 }
+
 .fa-solid .fa-heart :hover:before {
-    content: '';
-    display: inline-flex;
-    position: absolute;
-    padding-top: 0px;
-    height: 10px;
-    left: 25px;
-    right: 25px;
-    justify-content: right;
-    border: 2px solid;
-    transition: 3s;
+  content: "";
+  display: inline-flex;
+  position: absolute;
+  padding-top: 0px;
+  height: 10px;
+  left: 25px;
+  right: 25px;
+  justify-content: right;
+  border: 2px solid;
+  background-color: rgb(169, 93, 220);
+  transition: 3s;
 }
-****/
+
 .img-header {
   object-fit: cover;
   width: 100%;
@@ -378,10 +412,10 @@ ol li {
   display: flex;
   background-color: #fff;
   box-shadow: 0 2px 10px 0 rgb(0, 0, 0);
-  padding: 1rem 0rem 1rem 1rem;
   border-radius: 10px;
   justify-content: space-between;
   gap: 20px;
+  overflow: hidden;
 }
 
 .menu-item__input {
@@ -390,20 +424,22 @@ ol li {
 
 .menu-item__body {
   flex-grow: 1;
+  padding: 1rem;
+  overflow: hidden;
 }
 
-.menu-item__title {
-  display: block;
-}
-
+.menu-item__title,
 .menu-item__text {
-  display: flex;
-  justify-content: space-between;
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .menu-item__price {
   display: flex;
   padding: 0 20px;
+  align-items: center;
 }
 
 .menu-item-checked {
@@ -413,6 +449,7 @@ ol li {
   align-items: center;
   justify-content: center;
   transition: width 300ms;
+  background-color: #99E2D0;
 }
 
 .menu-item__input:checked + label .menu-item-checked {
@@ -429,14 +466,10 @@ ol li {
   padding-right: auto;
 }
 
-.menu-item__price:hover {
-  background-color: #99E2D0;
-  color: #353535;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border: 3px;
-  padding: 10px 10px;
-  font-weight: 700;
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .menu-start {
@@ -449,7 +482,7 @@ ol li {
   display: inline-block;
 }
 
-.menu-start:hover:before {
+.menu-start:before {
   content: "";
   display: block;
   position: absolute;
@@ -459,7 +492,7 @@ ol li {
   background-color: #99E2D0;
   box-sizing: border-box;
   left: 0;
-  right: 0px;
+  width: 50px;
 }
 
 .menu-start::after {
@@ -469,7 +502,7 @@ ol li {
   width: 20px;
   right: 0;
   bottom: 8px;
-  transition: ease-out;
+  transition: ease-out 2s;
 }
 
 .menu-start::after {
