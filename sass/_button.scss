@@ -1,5 +1,4 @@
 .section__button {
-
     border-radius: 30px;
     background: rgb(220, 110, 219);
     background: linear-gradient(169deg, rgba(220, 110, 219, 1) 27%, rgba(165, 92, 220, 1) 100%);
@@ -12,26 +11,14 @@
     position: relative;
     transition: 0.8s;
     overflow: hidden;
+    transition: 300ms;
 
-    .section__button::before {
-        content: "";
-        position: absolute;
-        background: $gradient-bgcolor;
-        right: 0%;
-        width: 0%;
-        height: 0%;
-        z-index: -1;
-        transition: 0.8s;
-    }
-
-    .section__button:hover {
-        background-color: $purple-pink-gradient-color;
-        transition: ease-in-out 0.8s;
+    &:hover {
+        filter: brightness(15-0%);
     }
 }
 
 .card-new {
-
     background-color: #99e2d0;
     color: #008766;
     font-family: Roboto;
@@ -54,3 +41,42 @@
         
 }
 **/
+
+.like {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    height: 20px;
+    width: 20px;
+
+    &-empty,
+    &-full {
+        position: absolute;
+        left: 3px;
+        top: 3px;
+        transition: opacity 300ms;
+    }
+
+    &-empty {
+        opacity: 1;
+    }
+
+    &-full {
+        opacity: 0;
+        background: rgb(89, 38, 151);
+        background: linear-gradient(140deg, rgba(89, 38, 151, 1) 4%, rgba(131, 59, 168, 1) 28%);
+        color: transparent;
+        background-clip: text;
+    }
+
+    &:hover {
+        .like-empty {
+            opacity: 0;
+        }
+
+        .like-full {
+            opacity: 1;
+        }
+    }
+}
