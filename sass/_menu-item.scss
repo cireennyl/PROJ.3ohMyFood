@@ -42,14 +42,25 @@
     background-color: $tertiaryColor;
 }
 
-.menu-item__input:checked+label .menu-item-checked {
+.menu-item__input:checked+label .menu-item-checked,
+.menu-item__card:hover .menu-item-checked {
     width: 80px;
-    /* color: $text-color;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border: 3px;
-    padding: 10px 10px;
-    font-weight: 700; */
+
+
+}
+
+.padding-bottom {
+    padding-bottom: 30px;
+}
+
+.menu-animation {
+    animation-name: slidesInMenu-item-checked;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-direction: reverse;
+    animation-fill-mode: both;
+
 }
 
 .fa-regular .fa-circle-check {

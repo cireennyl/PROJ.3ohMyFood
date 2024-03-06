@@ -18,13 +18,15 @@
 
 <body>
     <nav class="navbar">
+        <a href="/" class="nav-back">
+            <i class="fa-solid fa-arrow-left"></i></a>
         <img class="nav-logo" src="images/logo/ohmyfood@2x.svg" alt="Logo called 'Oh my food'">
 
     </nav>
-    <a href="#">
-        <img class="img-header" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
-    </a>
-    <div class="container bg-grey border-radius-top mt">
+
+    <img class="img-header" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
+
+    <div class="container bg-grey border-radius-top mt padding-bottom">
 
         <h1 class="title">Kitchen West</h1>
         <h3 class="menu-start">Starter</h3>
@@ -68,6 +70,20 @@
                     </span>
                 </label>
             </div>
+
+            <div class="menu-item">
+                <input class="menu-item__input" type="checkbox" name="menu-item-1" id="menu-item-1">
+                <label for="menu-item-1" class="menu-item__card">
+                    <span class="menu-item__body">
+                        <strong class="menu-item__title">Smoked Salmon</strong>
+                        <span class="menu-item__text">With beetroot and horseradish dressing </span>
+                    </span>
+                    <strong class="menu-item__price">£25</strong>
+                    <span class="menu-item-checked">
+                        <i class="fa-regular fa-circle-check"></i>
+                    </span>
+                </label>
+            </div>
         </div>
     </div>
 
@@ -76,14 +92,22 @@
 
     <!---------------------------  F O O T E R  ---------------------------->
     <footer>
-        <div class="footer-logo">
-            <img src="ImagesandtextOhmyfood/images/logo/ohmyfood@2x.svg" alt="" width="61">
-            <div class="footer-links">
-                <a class="footlink" href="#Suggest"><i class="fa-solid fa-utensils"></i>Suggest a Restaurant</a>
-                <a class="footlink" href="#bcomeapartner"><i class="fa-solid fa-handshake-simple"></i> Become a
-                    partner</a>
-                <a class="footlink" href="#notice">Legal notice</a>
-                <a class="footlink" href="#contact"> Contact</a>
+        <div class="footer">
+            <div class="footer-col">
+                <div class="footer-logo">
+
+                </div>
+                <div class="footer-links">
+                    <h4 class="footer-logo">Oh my food</h4>
+                    <a class="footlink" href="#Suggest"><i class="footer-icon fa-solid fa-utensils"></i>Suggest a
+                        Restaurant</a>
+                    <a class="footlink" href="#bcomeapartner"> <i
+                            class="footer-icon fa-solid fa-handshake-simple"></i>Become a
+                        partner</a>
+                    <a class="footlink" href="#notice">Legal notice</a>
+                    <a class="footlink" href="#contact"> Contact</a>
+
+                </div>
             </div>
         </div>
     </footer>

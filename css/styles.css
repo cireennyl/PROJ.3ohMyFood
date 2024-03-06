@@ -157,7 +157,7 @@ a:visited,
 a:active {
   text-decoration: none;
   font-family: Roboto;
-  color: #fff;
+  color: #000;
 }
 
 .card-newbox {
@@ -210,6 +210,15 @@ ol li {
   justify-content: center;
   padding: 0;
   box-shadow: 0em 0.1em 0.5em rgb(142, 142, 139);
+}
+
+.nav-back {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 20px;
+  display: inline-flex;
+  align-items: center;
 }
 
 .nav-logo {
@@ -371,10 +380,6 @@ ol li {
   color: #9356DC;
 }
 
-.fa-mobile-screen-button .fa-solid .fa-store .fa-light .fa-heart {
-  border: 2px solid var(#f6f6f6);
-}
-
 .fa-mobile-screen-button {
   color: #8d8d8d;
 }
@@ -388,15 +393,6 @@ ol li {
   font-size: 20px;
   padding: 5px;
   border-radius: 20px;
-}
-
-.fa-utensils {
-  padding: 15px;
-  border: 1px solid #ededed;
-}
-
-.fa-handshake-simple {
-  padding: 15px;
 }
 
 .fa-light .fa-heart {
@@ -473,14 +469,22 @@ ol li {
   background-color: #99E2D0;
 }
 
-.menu-item__input:checked + label .menu-item-checked {
+.menu-item__input:checked + label .menu-item-checked,
+.menu-item__card:hover .menu-item-checked {
   width: 80px;
-  /* color: $text-color;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border: 3px;
-  padding: 10px 10px;
-  font-weight: 700; */
+}
+
+.padding-bottom {
+  padding-bottom: 30px;
+}
+
+.menu-animation {
+  animation-name: slidesInMenu-item-checked;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+  animation-direction: reverse;
+  animation-fill-mode: both;
 }
 
 .fa-regular .fa-circle-check {
@@ -531,35 +535,37 @@ ol li {
 }
 
 .footer {
-  margin: 0;
+  margin: 0%;
   background-color: #353535;
-  /** 
-      position: fixed;
-      bottom: 0.4rem;
-      right: 16px;
-
-      padding: 16px;
-      color: #ffffff;
-      background-color: $text-color;*
-
-  **/
+  padding: 40px 20px 20px 30px;
 }
 
 .footer-col {
-  width: 0;
-  padding: 100px 60px;
+  padding: 10px 10px;
+}
+
+.footer-icon {
+  margin-right: 10px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .footer-logo {
   font-family: Shrikhand;
   color: #ededed;
+  margin: 0%;
 }
 
-.footlink {
-  padding: 0 30px 10px 20px;
-  text-align: center;
+@media screen and (min-width: 768px) {
+  .footer-links {
+    flex-direction: row;
+    justify-content: end;
+  }
 }
-
 body {
   background: #ffffff;
   color: #353535;
