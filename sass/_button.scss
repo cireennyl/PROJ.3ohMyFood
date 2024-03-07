@@ -12,10 +12,20 @@
     transition: 0.8s;
     overflow: hidden;
     transition: 300ms;
+    color: #ededed;
+
 
     &:hover {
         filter: brightness(15-0%);
     }
+}
+
+.section__button-order {
+    border: none transparent;
+    position: relative;
+    justify-content: center;
+    color: ededed;
+
 }
 
 .card-new {

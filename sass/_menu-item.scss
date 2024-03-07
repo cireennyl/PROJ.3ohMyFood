@@ -26,6 +26,11 @@
     white-space: nowrap;
 }
 
+.menu-item__text {
+    font-weight: 100;
+    font-size: 14px;
+}
+
 .menu-item__price {
     display: flex;
     padding: 0 20px;
