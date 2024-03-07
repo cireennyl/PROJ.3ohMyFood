@@ -179,6 +179,13 @@ body {
   color: #ededed;
 }
 
+.button-order {
+  font-size: 1.1rem;
+  font-weight: 500;
+  background-color: transparent;
+  justify-content: center;
+}
+
 .bg-grey {
   background-color: #f6f6f6;
 }
@@ -273,11 +280,9 @@ ol li {
   filter: brightness(15%);
 }
 
-.section__button-order {
+.button-order {
   border: none transparent;
   position: relative;
-  justify-content: center;
-  color: ededed;
 }
 
 .card-new {
@@ -294,15 +299,6 @@ ol li {
   padding-top: 7px;
 }
 
-/**
-.section__button a {
-
-    font-family: Roboto;
-        color: white;
-        text-align: center;
-
-}
-**/
 .like {
   background-color: transparent;
   border: none;
@@ -434,8 +430,19 @@ ol li {
   margin-left: 20px;
 }
 
-.nav-back:visited :active {
+.fa-arrow-left {
   color: #4b4b4b;
+}
+
+.like-title {
+  height: 50px;
+  width: 30px;
+  position: relative;
+}
+.like-title_fa-regular fa-heart like-empty {
+  position: absolute;
+  top: 40px;
+  right: 20px;
 }
 
 .img-header {
@@ -566,16 +573,6 @@ ol li {
   margin: 0%;
   background-color: #353535;
   padding: 40px 20px 20px 30px;
-  /** 
-      position: fixed;
-      bottom: 0.4rem;
-      right: 16px;
-
-      padding: 16px;
-      color: #ffffff;
-      background-color: $text-color;*
-
-  **/
 }
 
 .footer-col {

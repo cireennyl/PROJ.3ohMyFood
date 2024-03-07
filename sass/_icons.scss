@@ -53,6 +53,18 @@
 
 }
 
-.nav-back:visited :active {
+.fa-arrow-left {
     color: #4b4b4b;
+}
+
+.like-title {
+    height: 50px;
+    width: 30px;
+    position: relative;
+
+    &_fa-regular fa-heart like-empty {
+        position: absolute;
+        top: 40px;
+        right: 20px;
+    }
 }
