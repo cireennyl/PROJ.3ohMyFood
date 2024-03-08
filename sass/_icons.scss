@@ -57,7 +57,7 @@
     color: #4b4b4b;
 }
 
-.like-title {
+.like {
     height: 50px;
     width: 30px;
     position: relative;
@@ -70,4 +70,10 @@
         border: none transparent;
         margin-right: 10px;
     }
+}
+
+.like .m-auto-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

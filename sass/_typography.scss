@@ -1,23 +1,13 @@
-h1 h2 ol li a p i {
+body {
     font-family: Roboto;
 }
 
 h2 {
-    font-family: Roboto;
     font-size: 24px;
     font-weight: 700;
 }
 
-h3 {
-    font-family: Arimo;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.1;
-    color: #000;
-}
-
 .card-section-title .section-title {
-    font-family: Roboto;
     color: #000;
     width: 268.72px;
     height: 28px;
@@ -46,26 +36,17 @@ a,
 a:visited,
 a:active {
     text-decoration: none;
-    font-family: Roboto;
     color: #ededed;
 }
 
 .card-newbox {
-
-    font-family: Roboto;
     color: #008766;
 
 }
 
-body {
-    font-family: Roboto;
-}
-
 .title {
     font-family: Shrikhand;
-
-    text-align: left;
-    margin-top: 20px;
+    margin-top: 0;
 
 }
 

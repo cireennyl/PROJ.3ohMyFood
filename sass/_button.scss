@@ -2,7 +2,7 @@
     border-radius: 30px;
     background: rgb(220, 110, 219);
     background: linear-gradient(169deg, rgba(220, 110, 219, 1) 27%, rgba(165, 92, 220, 1) 100%);
-    box-shadow: 0 3px 15px 0 rgba(0, 0, 0.3);
+    box-shadow: 0 3px 15px 0 rgb(139, 40, 188);
     min-width: 155px;
     display: inline-block;
     padding: 12px 20px;
@@ -16,7 +16,7 @@
 
 
     &:hover {
-        filter: brightness(15-0%);
+        filter: brightness(10);
     }
 }
 
