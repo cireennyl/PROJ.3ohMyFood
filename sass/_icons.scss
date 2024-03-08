@@ -62,9 +62,12 @@
     width: 30px;
     position: relative;
 
+
     &_fa-regular fa-heart like-empty {
         position: absolute;
         top: 40px;
         right: 20px;
+        border: none transparent;
+        margin-right: 10px;
     }
 }

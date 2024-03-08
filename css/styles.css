@@ -443,6 +443,8 @@ ol li {
   position: absolute;
   top: 40px;
   right: 20px;
+  border: none transparent;
+  margin-right: 10px;
 }
 
 .img-header {
