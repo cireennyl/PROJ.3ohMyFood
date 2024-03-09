@@ -260,7 +260,7 @@ ol li {
   color: #ededed;
 }
 .section__button:hover {
-  filter: brightness(10);
+  filter: brightness(106);
 }
 
 .button-order {
@@ -628,6 +628,22 @@ ol li {
     transform: translate(0);
   }
 }
+.loader {
+  background-color: #9356DC;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: loader-fade;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+}
+
 body {
   background: #ffffff;
   color: #353535;
