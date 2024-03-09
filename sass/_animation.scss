@@ -1,0 +1,32 @@
+.menu--fade {
+    animation-name: menuv-fade;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.menu--fade-1 {
+    animation-delay: 0.1s;
+}
+
+.menu--fade-2 {
+    animation-delay: 0.2s;
+}
+
+.menu--fade-3 {
+    animation-delay: 0.3s;
+}
+
+@keyframes menu-fade {
+    0% {
+        opacity: 0;
+        transform: translate(0, 200px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+
+}

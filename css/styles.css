@@ -102,33 +102,24 @@ body {
 }
 
 .section {
-  padding: 45px 0;
+  padding-top: 45px;
+  padding-bottom: 45px;
 }
 
 .section__title {
   margin-top: 0;
 }
 
-h1 h2 ol li a p i {
+body {
   font-family: Roboto;
 }
 
 h2 {
-  font-family: Roboto;
   font-size: 24px;
   font-weight: 700;
 }
 
-h3 {
-  font-family: Arimo;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.1;
-  color: #000;
-}
-
 .card-section-title .section-title {
-  font-family: Roboto;
   color: #000;
   width: 268.72px;
   height: 28px;
@@ -156,21 +147,18 @@ a,
 a:visited,
 a:active {
   text-decoration: none;
-  font-family: Roboto;
   color: #ededed;
 }
 
 .card-newbox {
-  font-family: Roboto;
   color: #008766;
-}
-
-body {
-  font-family: Roboto;
 }
 
 .title {
   font-family: Shrikhand;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 0;
 }
 
@@ -189,11 +177,6 @@ body {
   background-color: #f6f6f6;
 }
 
-h1 {
-  text-align: center;
-  color: #000000;
-}
-
 p {
   color: #353535;
 }
@@ -205,7 +188,8 @@ ol li {
 .container {
   max-width: 800px;
   margin: auto;
-  padding: 0 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .mt {
@@ -276,7 +260,7 @@ ol li {
   color: #ededed;
 }
 .section__button:hover {
-  filter: brightness(55);
+  filter: brightness(10);
 }
 
 .button-order {
@@ -433,12 +417,12 @@ ol li {
   color: #4b4b4b;
 }
 
-.like-title {
+.like {
   height: 50px;
   width: 30px;
   position: relative;
 }
-.like-title_fa-regular fa-heart like-empty {
+.like_fa-regular fa-heart like-empty {
   position: absolute;
   top: 40px;
   right: 20px;
@@ -612,6 +596,36 @@ ol li {
   .footer-links {
     flex-direction: row;
     justify-content: end;
+  }
+}
+.menu--fade {
+  animation-name: menuv-fade;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.menu--fade-1 {
+  animation-delay: 0.1s;
+}
+
+.menu--fade-2 {
+  animation-delay: 0.2s;
+}
+
+.menu--fade-3 {
+  animation-delay: 0.3s;
+}
+
+@keyframes menu-fade {
+  0% {
+    opacity: 0;
+    transform: translate(0, 200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
   }
 }
 body {
