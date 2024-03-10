@@ -1,5 +1,5 @@
 .menu--fade {
-    animation-name: menuv-fade;
+    animation-name: menu-fade;
     animation-duration: 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -16,6 +16,30 @@
 
 .menu--fade-3 {
     animation-delay: 0.3s;
+}
+
+.menu--fade-4 {
+    animation-delay: 0.4s;
+}
+
+.menu--fade-5 {
+    animation-delay: 0.4s;
+}
+
+.menu--fade-6 {
+    animation-delay: 0.4s;
+}
+
+.menu--fade-7 {
+    animation-delay: 0.4s;
+}
+
+.menu--fade-8 {
+    animation-delay: 0.4s;
+}
+
+.menu--fade-9 {
+    animation-delay: 0.4s;
 }
 
 @keyframes menu-fade {
@@ -71,7 +95,7 @@
     height: 80px;
 }
 
-/*
+
 .lds-ring div {
     box-sizing: border-box;
     display: block;
@@ -97,4 +121,13 @@
 .lds-ring div:nth-child(3) {
     animation-delay: -0.15s;
 }
-*/
+
+@keyframes lds-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
