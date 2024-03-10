@@ -1,10 +1,10 @@
-/* Error: Undefined variable.
- *     ,
- * 106 |     border: 8px solid $secondaryBgColorblack;
- *     |                       ^^^^^^^^^^^^^^^^^^^^^^
- *     '
- *   sass\_animation.scss 106:23  @import
- *   sass\styles.scss 16:8        root stylesheet */
+/* Error: Expected identifier.
+ *    ,
+ * 45 | ..menu--fade-10 {
+ *    |  ^
+ *    '
+ *   sass\_animation.scss 45:2  @import
+ *   sass\styles.scss 16:8      root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a     \2577 \a 106 \2502      border: 8px solid $secondaryBgColorblack;\d\a     \2502                        ^^^^^^^^^^^^^^^^^^^^^^\a     \2575 \a   sass\\_animation.scss 106:23  @import\a   sass\\styles.scss 16:8        root stylesheet";
+  content: "Error: Expected identifier.\a    \2577 \a 45 \2502  ..menu--fade-10 {\d\a    \2502   ^\a    \2575 \a   sass\\_animation.scss 45:2  @import\a   sass\\styles.scss 16:8      root stylesheet";
 }

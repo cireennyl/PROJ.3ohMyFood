@@ -23,23 +23,27 @@
 }
 
 .menu--fade-5 {
-    animation-delay: 0.4s;
+    animation-delay: 0.5s;
 }
 
 .menu--fade-6 {
-    animation-delay: 0.4s;
+    animation-delay: 0.6s;
 }
 
 .menu--fade-7 {
-    animation-delay: 0.4s;
+    animation-delay: 0.7s;
 }
 
 .menu--fade-8 {
-    animation-delay: 0.4s;
+    animation-delay: 0.8s;
 }
 
 .menu--fade-9 {
-    animation-delay: 0.4s;
+    animation-delay: 0.9s;
+}
+
+..menu--fade-10 {
+    animation-delay: 0.10s;
 }
 
 @keyframes menu-fade {
@@ -69,6 +73,8 @@
     animation-duration: 2s;
     animation-delay: 2s;
     animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    z-index: 1000;
 }
 
 @keyframes loader-fade {
@@ -103,19 +109,19 @@
     width: 64px;
     height: 64px;
     margin: 8px;
-    border: 8px solid $secondaryBgColorblack;
+    border: 8px solid $secondaryBgColor;
     border-radius: 50%;
     animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1)infinite;
-    border-color: $secondaryBgColorblack transparent transparent transparent;
+    border-color: $secondaryBgColor transparent transparent transparent;
 }
 
 
 .lds-ring div:nth-child(1) {
-    animation-delay: -8.45s;
+    animation-delay: -0.45s;
 }
 
 .lds-ring div:nth-child(2) {
-    animation-delay: -8.3s;
+    animation-delay: -0.3s;
 }
 
 .lds-ring div:nth-child(3) {
