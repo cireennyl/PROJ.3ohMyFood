@@ -16,7 +16,7 @@
 }
 
 .card-group .card {
-    min-width: 390px;
+    min-width: 100%;
     flex: 1 0 0;
 }
 
@@ -93,4 +93,11 @@
 .heart-icon:hover {
     color: $gradient-bgcolor;
     transition: ease-in 300ms;
+}
+
+@media screen and (min-width:400px) {
+    .card-group .card {
+        min-width: 300px;
+        flex: 1 0 0;
+    }
 }
